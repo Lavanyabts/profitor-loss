@@ -7,19 +7,15 @@ var outputBox = document.querySelector('#output-box');
 
 function calculateProfitAndLoss(initial, quantity, current)
 {
-    if(initial > current) {
-        var loss = (initial - current) * quantity;
-        var lossPercentage = (loss / initial) * 100;
-        showOutput('loss is ${loss}. loss percentage is ${lossPercentage}%');
-    }
-
-    else if(current > initial) {
+    if (current > initial) {
         var profit = (current - initial) * quantity;
         var profitPercentage = (profit / initial) * 100;
-        showOutput('profit is ${profit}. profit percentage is ${profitPercentage}%');
-    }
-
-    else {
+        showOutput(`Profit is ${profit}. Profit percentage is ${profitPercentage}%`);
+    } else if (current < initial) {
+        var loss = (initial - current) * quantity;
+        var lossPercentage = (loss / initial) * 100;
+        showOutput(`Loss is ${loss}. Loss percentage is ${lossPercentage}%`);
+    } else {
         showOutput('There is nothing to loss or gain!');
     }
 }

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Dosis:wght@500&family=Fira+Sans+Condensed:ital,wght@0,300;1,200&family=Fredoka:wght@500&family=Koulen&family=Open+Sans:ital@1&family=Pacifico&family=Patrick+Hand&family=Rubik&family=Supermercado+One&display=swap');
+
+:root {
+    --primary-color: #701a75;
+  }
+
+body {
+  font-family: 'Koulen', cursive;
+  font-size: large;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+label {
+    padding: 0.5rem;
+    font-size: larger;
+}
+
+input {
+    margin: auto;
+    display: block;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid var(--primary-color);
+    color: black;
+}
+
+#outputBox {
+    padding: 1rem;
+}
+
+button {
+    font-size: large;
+    border-radius: 0.5rem;
+    padding: o.8rem;
+    border: 2px solid var(--primary-color);
+}
